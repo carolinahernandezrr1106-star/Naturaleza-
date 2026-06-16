@@ -40,31 +40,23 @@ img{
 width:300px;
 border-radius:15px;
 margin:10px;
-cursor:pointer;
 }
 </style>
 
 <script>
 
 var fauna = {
-  "nombre": "Fauna",
-  "dato": "México alberga alrededor del 10% de las especies del planeta."
+nombre: "Fauna",
+dato: "México tiene el 10% de especies del mundo."
 };
 
 function cambiarColor(){
 document.body.style.backgroundColor="#cce5ff";
-alert("México alberga alrededor del 10% de las especies del planeta.");
+alert("México es megadiverso.");
 }
 
 function verJSON(){
-alert(
-"Tema: " + fauna.nombre +
-"\nDato: " + fauna.dato
-);
-}
-
-function mostrarVideo(){
-document.getElementById("videoFauna").style.display = "block";
+alert("Tema: " + fauna.nombre + "\nDato: " + fauna.dato);
 }
 
 </script>
@@ -75,38 +67,22 @@ document.getElementById("videoFauna").style.display = "block";
 
 <div class="caja">
 
-<h1> Fauna </h1>
+<h1>Fauna</h1>
 
-<img src="fauna2C.jpg" alt="Fauna" onclick="mostrarVideo()">
+<img src="fauna2C.jpg" alt="Fauna">
 
-<p><b>Haz clic.</b></p>
-
-<div id="videoFauna" style="display:none;">
-
-<video width="350" controls>
-<source src="fauna.mp4" type="video/mp4">
-Tu navegador no soporta videos.
-</video>
-
-</div>
-
-<p>
-La fauna está formada por todos los animales que viven en un ecosistema.
-</p>
+<p>La fauna está formada por todos los animales de un ecosistema.</p>
 
 <h2>Dato Curioso</h2>
 
-<p>
-México es uno de los países con mayor biodiversidad del mundo.
-</p>
+<p>México es uno de los países más biodiversos.</p>
 
 <button onclick="cambiarColor()">Ver Curiosidad</button>
-
 <button onclick="verJSON()">Ver Dato JSON</button>
 
 <br><br>
 
-<a href="menu.html">⬅ Volver al Menú</a>
+<a href="index.html">⬅ Volver al Menú</a>
 
 </div>
 

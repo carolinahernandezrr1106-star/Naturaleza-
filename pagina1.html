@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Flora</title>
+<title>Fauna</title>
 
 <style>
 body{
 font-family:Arial;
-background:#e8ffe8;
+background:#fff7d6;
 text-align:center;
 }
 
 h1{
 font-family:cursive;
-color:darkgreen;
+color:darkgoldenrod;
 }
 
 h2{
 font-family:cursive;
-color:green;
+color:orange;
 }
 
 .caja{
@@ -40,30 +40,23 @@ img{
 width:300px;
 border-radius:15px;
 margin:10px;
-cursor:pointer;
 }
 </style>
 
 <script>
 
-var flora = {
-  "nombre": "Flora",
-  "dato": "Algunos árboles pueden vivir miles de años."
+var fauna = {
+nombre: "Fauna",
+dato: "México tiene el 10% de especies del mundo."
 };
 
-function mostrarDato(){
-alert("Las plantas producen gran parte del oxígeno que respiramos.");
+function cambiarColor(){
+document.body.style.backgroundColor="#cce5ff";
+alert("México es megadiverso.");
 }
 
 function verJSON(){
-alert(
-"Tema: " + flora.nombre +
-"\nDato: " + flora.dato
-);
-}
-
-function mostrarVideo(){
-document.getElementById("videoFlora").style.display = "block";
+alert("Tema: " + fauna.nombre + "\nDato: " + fauna.dato);
 }
 
 </script>
@@ -74,38 +67,22 @@ document.getElementById("videoFlora").style.display = "block";
 
 <div class="caja">
 
-<h1> Flora </h1>
+<h1>Fauna</h1>
 
-<img src="flora1C.jpg" alt="Flora" onclick="mostrarVideo()">
+<img src="fauna2C.jpg" alt="Fauna">
 
-<p><b>Haz clic </b></p>
-
-<div id="videoFlora" style="display:none;">
-
-<video width="350" controls>
-<source src="flora.mp4" type="video/mp4">
-Tu navegador no soporta videos.
-</video>
-
-</div>
-
-<p>
-La flora está formada por todas las plantas que habitan una región.
-</p>
+<p>La fauna está formada por todos los animales de un ecosistema.</p>
 
 <h2>Dato Curioso</h2>
 
-<p>
-Algunas especies de árboles pueden vivir miles de años.
-</p>
+<p>México es uno de los países más biodiversos.</p>
 
-<button onclick="mostrarDato()">Ver Curiosidad</button>
-
+<button onclick="cambiarColor()">Ver Curiosidad</button>
 <button onclick="verJSON()">Ver Dato JSON</button>
 
 <br><br>
 
-<a href="menu.html">⬅ Volver al Menú</a>
+<a href="index.html">⬅ Volver al Menú</a>
 
 </div>
 

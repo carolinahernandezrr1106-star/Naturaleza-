@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Encuesta de Naturaleza</title>
+
+<style>
+body{
+font-family:Arial;
+background:linear-gradient(#d6f5ff,#e8ffe8);
+text-align:center;
+}
+
+h1{
+font-family:cursive;
+color:darkgreen;
+}
+
+.caja{
+background:white;
+padding:20px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+box-shadow:0 0 10px gray;
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+border-radius:10px;
+cursor:pointer;
+}
+
+input{
+margin:8px;
+padding:8px;
+}
+</style>
+
+<script>
+
+// ENCUESTA
+function encuesta(){
+
+var p1 = document.getElementById("p1").value;
+var p2 = document.getElementById("p2").value;
+var p3 = document.getElementById("p3").value;
+
+alert(
+"🌿 ENCUESTA DE NATURALEZA\n\n" +
+"1. Lugar favorito: " + p1 + "\n" +
+"2. Importancia: " + p2 + "\n" +
+"3. Cuidado: " + p3 + "\n\n" +
+"Gracias por responder 🌱"
+);
+}
+
+// CALCULADORA SIMPLE (EXTRA)
+function sumar(){
+
+var a = Number(document.getElementById("n1").value);
+var b = Number(document.getElementById("n2").value);
+
+alert("Resultado: " + (a + b));
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="caja">
+
+<h1>Encuesta de la Naturaleza</h1>
+
+<p>Responde lo siguiente sobre la naturaleza 🌿</p>
+
+<hr>
+
+<h3>🌱 Encuesta</h3>
+
+<p>¿Cuál es tu lugar natural favorito?</p>
+<input type="text" id="p1">
+
+<p>¿Por qué es importante la naturaleza?</p>
+<input type="text" id="p2">
+
+<p>¿Cómo cuidas el medio ambiente?</p>
+<input type="text" id="p3">
+
+<button onclick="encuesta()">Enviar Encuesta</button>
+
+<hr>
+
+<h3>🧮 Mini calculadora (extra)</h3>
+
+<input type="number" id="n1" placeholder="Número 1">
+<input type="number" id="n2" placeholder="Número 2">
+
+<br>
+
+<button onclick="sumar()">Sumar</button>
+
+<br><br>
+
+<a href="index.html">⬅ Volver al Menú</a>
+
+</div>
+
+</body>
+</html>
