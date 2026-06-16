@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Naturaleza</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#b8f5b8,#e8ffe8);
+    text-align:center;
+    margin:20px;
+}
+
+h1{
+    color:darkgreen;
+    font-family:cursive;
+}
+
+.caja{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    max-width:700px;
+    margin:auto;
+    box-shadow:0 0 10px gray;
+}
+
+a{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+img{
+    width:350px;
+    border-radius:15px;
+    margin:10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="caja">
+
+<h1> La Naturaleza </h1>
+
+<img src="naturaleza.jpg" alt="Naturaleza">
+
+<p>
+La naturaleza es el conjunto de seres vivos, paisajes y elementos que forman nuestro planeta.
+</p>
+
+<h3>Alumno: Carolina Hernández</h3>
+<h3>Tema: Naturaleza</h3>
+
+<p id="fecha"></p>
+
+<a href="pagina1.html"> Flora</a>
+<a href="pagina2.html"> Fauna</a>
+
+</div>
+
+<script>
+document.getElementById("fecha").innerHTML =
+"Fecha: " + new Date().toLocaleDateString();
+</script>
+
+</body>
+</html>
